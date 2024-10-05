@@ -18,7 +18,7 @@ def get_next_hour_data():
     consumption_forecast = random.uniform(2, 5)  # Forecasted energy consumption (in kW)
     
     # electricity_price = random.uniform(0.03, 0.2)  # Electricity price per kWh
-    electricity_prices = get_electricity_prices(next_hours=2)
+    electricity_prices = get_electricity_prices()
 
     weather_forecast = random.choice(["sunny", "cloudy"])  # Random weather forecast
     return battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast
