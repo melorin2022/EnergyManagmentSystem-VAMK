@@ -25,3 +25,10 @@ By means of our combined efforts and individual expertise, we are sure that our 
 
 # Hourly Househol Enenrgy Consumption in Finland Jan - Dec. 2023
 # Data source link https://data.fingrid.fi/en/datasets/364
+
+# cost estimation
+Employee 6 , Salary per month =6*3000= 18000
+Solar panel 6kw cost = 635
+Ec2=
+Vps = 100
+power meter 10kw= 6500
