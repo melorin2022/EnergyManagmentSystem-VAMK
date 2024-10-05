@@ -46,5 +46,5 @@ By means of our combined efforts and individual expertise, we are sure that our 
 - Employee 6 , Salary per month =6*3000= 18000
 - Solar panel 6kw cost = 635
 - Ec2=
-- Vps = 100
+- Vps (4 threads, 50 GB storage, 10GB ram)= 20/month = 100
 - power battery 10kw= 6500
