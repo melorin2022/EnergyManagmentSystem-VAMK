@@ -22,3 +22,6 @@ Creating a corporate strategy:
 Our main objective is to create a business strategy, defining our approach of presenting our solution to Vaasa's residents. This idea primarily aims to show how our smart capacitor may be integrated into the social energy ecosystem and its possible benefits for individuals.
 
 By means of our combined efforts and individual expertise, we are sure that our program will provide a workable solution to enhance home energy management, therefore guiding Vaasa's future towards increased ecological sustainability.
+
+# Hourly Househol Enenrgy Consumption in Finland Jan - Dec. 2023
+# Data source link https://data.fingrid.fi/en/datasets/364
