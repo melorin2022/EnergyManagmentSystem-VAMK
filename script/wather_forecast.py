@@ -14,6 +14,7 @@ params = {
 # Send request to the weather API
 response = requests.get(url, params=params)
 data = response.json()
+print(data)
 
 # Hourly data
 time = data["hourly"]["time"]
@@ -42,30 +43,28 @@ sunrise_time, sunset_time = find_sunrise_sunset(next_hour_date_str, daily_time, 
 
 # Function to check if it's day or night
 def is_daytime(next_hour_str, sunrise_time, sunset_time):
-    next_hour_time = datetime.strptime(next_hour_str, '%Y-%m-%dT%H:00:00')
-    sunrise_time = datetime.strptime(sunrise_time, '%Y-%m-%dT%H:%M:%S')
-    sunset_time = datetime.strptime(sunset_time, '%Y-%m-%dT%H:%M:%S')
-
+ 
     # Check if the next hour is between sunrise and sunset
-    if sunrise_time <= next_hour_time <= sunset_time:
+    if sunrise_time <= next_hour_str <= sunset_time:
         return True  # Daytime
     return False  # Nighttime
 
 # Find the index of the next hour in the hourly data
-if next_hour_str in time:
-    next_hour_index = time.index(next_hour_str)
+next_hour_str1 = current_time.replace(minute=0, second=0, microsecond=0).strftime('%Y-%m-%dT%H:%M')
+if next_hour_str1 in time:
+    next_hour_index = time.index(next_hour_str1)
     next_hour_cloud_cover = cloud_coverage[next_hour_index]
 
     # Only proceed if sunrise and sunset times were found
     if sunrise_time and sunset_time:
         # Determine if it's day or night
-        if is_daytime(next_hour_str, sunrise_time, sunset_time):
+        if is_daytime(next_hour_str1, sunrise_time, sunset_time):
             if next_hour_cloud_cover > 40:
-                print(f"The next hour ({next_hour_str}) is cloudy.")
+                print(f"cloudy")
             else:
-                print(f"The next hour ({next_hour_str}) is sunny.")
+                print(f"sunny")
         else:
-            print(f"The next hour ({next_hour_str}) is night.")
+            print(f"night")
     else:
         print("Sunrise and sunset times not found for the day of the next hour.")
 else:
