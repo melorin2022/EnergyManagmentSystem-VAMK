@@ -23,7 +23,8 @@ Our main objective is to create a business strategy, defining our approach of pr
 
 By means of our combined efforts and individual expertise, we are sure that our program will provide a workable solution to enhance home energy management, therefore guiding Vaasa's future towards increased ecological sustainability.
 
-Solution Workflow:
+# Solution Workflow:
+
 1.Get Weather Forecast from external apis.
 2. Predict Solar Energy Output
 3. Predict Consumption
@@ -31,10 +32,12 @@ Solution Workflow:
 5. Estimate peak hours for buying and selling 
 6. make decision to buy sell or store.
 
-Using AI:
+# Using AI:
+
 1. Energy management - buy , store or sell
 2. Energy demand forecasting using AI
 3. Integration with the inverter -> when to charge the battery or discharge
+   
 
 # Hourly Househol Enenrgy Consumption in Finland Jan - Dec. 2023
 # Data source link https://data.fingrid.fi/en/datasets/364
