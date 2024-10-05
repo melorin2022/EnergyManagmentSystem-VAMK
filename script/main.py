@@ -1,6 +1,6 @@
 import time
 import random
-from energy_price import get_electricity_prices
+from energy_price import get_electricity_price
 
 # Constants
 MAX_SOLAR_OUTPUT = 6  # in kW
@@ -18,7 +18,7 @@ def get_next_hour_data():
     consumption_forecast = random.uniform(2, 5)  # Forecasted energy consumption (in kW)
     
     # electricity_price = random.uniform(0.03, 0.2)  # Electricity price per kWh
-    electricity_prices = get_electricity_prices()
+    electricity_price = get_electricity_price()
 
     weather_forecast = random.choice(["sunny", "cloudy"])  # Random weather forecast
     return battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast
