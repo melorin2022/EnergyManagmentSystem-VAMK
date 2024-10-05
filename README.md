@@ -25,26 +25,26 @@ By means of our combined efforts and individual expertise, we are sure that our 
 
 # Solution Workflow:
 
-1.Get Weather Forecast from external apis.
+1. Get Weather Forecasts from external APIs.
 2. Predict Solar Energy Output.
 3. Predict Consumption.
-4. Calculate remaining energy .
-5. Estimate peak hours for buying and selling .
-6. make decision to buy sell or store.
+4. Calculate remaining energy.
+5. Estimate peak hours for buying and selling.
+6. Make a decision to buy sell or store.
 
-# Using AI:
+## Using AI:
 
-1. Energy management - buy , store or sell.
+1. Energy management - buy, store or sell.
 2. Energy demand forecasting using AI.
 3. Integration with the inverter -> when to charge the battery or discharge.
    
 
 # Hourly Househol Enenrgy Consumption in Finland Jan - Dec. 2023
-# Data source link https://data.fingrid.fi/en/datasets/364
+[Data source link](https://data.fingrid.fi/en/datasets/364)
 
 # cost estimation
-Employee 6 , Salary per month =6*3000= 18000
-Solar panel 6kw cost = 635
-Ec2=
-Vps = 100
-power battery 10kw= 6500
+- Employee 6 , Salary per month =6*3000= 18000
+- Solar panel 6kw cost = 635
+- Ec2=
+- Vps = 100
+- power battery 10kw= 6500
