@@ -4,15 +4,13 @@ Using their transactions, we will examine consumer behavior on purchase, sale, a
 The initiative seeks to provide Vaasa people with the information and tools required for sensible energy use. This will help the city to have a more safe and rich future.
 Task distribution among our six-member project team has been efficient in ensuring the complete development of our smart electrical capacitor for Vaasa. GitHub has helped us to simplify our procedures. We have put our findings there for simple access. Should you find it interesting, you might get it from https://github.com/melorin2022/EnergyManagementSystem-VAMK.
 
-Task Design
+# Task Design
 
-For meteorological data and documentation, how may APIs be applied?
+For meteorological data and documentation, how may APIs be applied? 
 One group member is focused on compiling APIs especially "OpenMeteo" to provide exact meteorological data. This information is crucial in determining the amount of solar energy generated and the best time for 
 capacitor charging.
 
-Creating scenarios helps in decision-making.
-
-Another team member is creating scenarios that would help customers make wise decisions about their choices in other spheres as well as their energy buying, consuming, and selling. This will help local populations to better grasp the consequences of their activities in different environments.
+Creating scenarios helps in decision-making: Another team member is creating scenarios that would help customers make wise decisions about their choices in other spheres as well as their energy buying, consuming, and selling. This will help local populations to better grasp the consequences of their activities in different environments.
 
 Real-time lighting evaluation:
 Two people share the task of coding the estimate of sunlight available at each one moment. Finding ideal charging times for the smart charger might help to maximize solar energy use.
