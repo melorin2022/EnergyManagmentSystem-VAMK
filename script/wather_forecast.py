@@ -14,7 +14,6 @@ params = {
 # Send request to the weather API
 response = requests.get(url, params=params)
 data = response.json()
-print(data)
 
 # Hourly data
 time = data["hourly"]["time"]
@@ -49,23 +48,24 @@ def is_daytime(next_hour_str, sunrise_time, sunset_time):
         return True  # Daytime
     return False  # Nighttime
 
-# Find the index of the next hour in the hourly data
-next_hour_str1 = current_time.replace(minute=0, second=0, microsecond=0).strftime('%Y-%m-%dT%H:%M')
-if next_hour_str1 in time:
-    next_hour_index = time.index(next_hour_str1)
-    next_hour_cloud_cover = cloud_coverage[next_hour_index]
+def get_weather_forecast():
+    # Find the index of the next hour in the hourly data
+    next_hour_str1 = current_time.replace(minute=0, second=0, microsecond=0).strftime('%Y-%m-%dT%H:%M')
+    if next_hour_str1 in time:
+        next_hour_index = time.index(next_hour_str1)
+        next_hour_cloud_cover = cloud_coverage[next_hour_index]
 
-    # Only proceed if sunrise and sunset times were found
-    if sunrise_time and sunset_time:
-        # Determine if it's day or night
-        if is_daytime(next_hour_str1, sunrise_time, sunset_time):
-            if next_hour_cloud_cover > 40:
-                print(f"cloudy")
+        # Only proceed if sunrise and sunset times were found
+        if sunrise_time and sunset_time:
+            # Determine if it's day or night
+            if is_daytime(next_hour_str1, sunrise_time, sunset_time):
+                if next_hour_cloud_cover > 40:
+                    return "cloudy"
+                else:
+                    return "sunny"
             else:
-                print(f"sunny")
+                return "night"
         else:
-            print(f"night")
+            return "Sunrise and sunset times not found for the day of the next hour."
     else:
-        print("Sunrise and sunset times not found for the day of the next hour.")
-else:
-    print("Next hour data not found in the weather forecast.")
+        return "Next hour data not found in the weather forecast."
