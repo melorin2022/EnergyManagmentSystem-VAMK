@@ -31,4 +31,4 @@ Employee 6 , Salary per month =6*3000= 18000
 Solar panel 6kw cost = 635
 Ec2=
 Vps = 100
-power meter 10kw= 6500
+power battery 10kw= 6500
