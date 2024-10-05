@@ -26,17 +26,17 @@ By means of our combined efforts and individual expertise, we are sure that our 
 # Solution Workflow:
 
 1.Get Weather Forecast from external apis.
-2. Predict Solar Energy Output
-3. Predict Consumption
-4. Calculate remaining energy 
-5. Estimate peak hours for buying and selling 
+2. Predict Solar Energy Output.
+3. Predict Consumption.
+4. Calculate remaining energy .
+5. Estimate peak hours for buying and selling .
 6. make decision to buy sell or store.
 
 # Using AI:
 
-1. Energy management - buy , store or sell
-2. Energy demand forecasting using AI
-3. Integration with the inverter -> when to charge the battery or discharge
+1. Energy management - buy , store or sell.
+2. Energy demand forecasting using AI.
+3. Integration with the inverter -> when to charge the battery or discharge.
    
 
 # Hourly Househol Enenrgy Consumption in Finland Jan - Dec. 2023
