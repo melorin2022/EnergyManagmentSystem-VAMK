@@ -17,7 +17,6 @@ def get_next_hour_data():
     solar_forecast = random.uniform(0, MAX_SOLAR_OUTPUT)  # Solar output in kW for next hour
     consumption_forecast = random.uniform(2, 5)  # Forecasted energy consumption (in kW)
     
-    # electricity_price = random.uniform(0.03, 0.2)  # Electricity price per kWh
     electricity_price = get_electricity_price()
 
     weather_forecast = random.choice(["sunny", "cloudy"])  # Random weather forecast
@@ -55,25 +54,21 @@ def make_decision(battery_level, solar_forecast, consumption_forecast, electrici
 
 # Main function to run hourly decision-making
 def energy_management_system():
-    while True:
-        # Fetch the necessary data for the next hour
-        battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast = get_next_hour_data()
-        
-        # Print the fetched data for reference
-        print(f"Battery Level: {battery_level:.2f} (max: 1.00), "
-              f"Solar Forecast: {solar_forecast:.2f} kW, "
-              f"Consumption Forecast: {consumption_forecast:.2f} kW, "
-              f"Electricity Price: {electricity_price:.2f} €/kWh, "
-              f"Weather: {weather_forecast}")
+    # Fetch the necessary data for the next hour
+    battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast = get_next_hour_data()
+    
+    # Print the fetched data for reference
+    print(f"Battery Level: {battery_level:.2f} (max: 1.00), "
+            f"Solar Forecast: {solar_forecast:.2f} kW, "
+            f"Consumption Forecast: {consumption_forecast:.2f} kW, "
+            f"Electricity Price: {electricity_price:.2f} €/kWh, "
+            f"Weather: {weather_forecast}")
 
-        # Make the decision for the next hour
-        action = make_decision(battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast)
-        
-        # Output the action
-        print("Next hour action: ", action)
-        
-        # Wait for an hour (for simulation, we reduce it to 5 seconds here)
-        time.sleep(5)  # change to `time.sleep(3600)` for actual hourly execution
+    # Make the decision for the next hour
+    action = make_decision(battery_level, solar_forecast, consumption_forecast, electricity_price, weather_forecast)
+    
+    # Output the action
+    print("Next hour action: ", action)
 
 # Run the energy management system
 if __name__ == "__main__":
