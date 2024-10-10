@@ -31,7 +31,7 @@ By means of our combined efforts and individual expertise, we are sure that our 
 2. [ ] Predict Solar Energy Output.
 3. [x] Predict Consumption.
 4. [ ] Calculate remaining energy.
-5. [ ] Estimate peak hours for buying and selling.
+5. [x] Estimate peak hours for buying and selling.
 6. [x] Make a decision to buy sell or store.
 
 ## Using AI
