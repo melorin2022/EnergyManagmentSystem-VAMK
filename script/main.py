@@ -15,6 +15,8 @@ LOW_BUY_PRICE_THRESHOLD = 0.05  # arbitrary value for low electricity price (€
 def get_next_hour_data():
     battery_level = random.uniform(0, 1)  # Battery charge % (0-1)- Temp: random
     solar_forecast = random.uniform(0, MAX_SOLAR_OUTPUT)  # Solar output in kW for next hour- Temp: random
+    
+    # TODO: Use the last year data for now.
     consumption_forecast = random.uniform(2, 5)  # Forecasted energy consumption (in kW)- Temp: random
     
     electricity_price = get_electricity_price()
