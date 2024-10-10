@@ -49,7 +49,7 @@ By means of our combined efforts and individual expertise, we are sure that our 
 # Cost Estimation
 - Employee 6 , Salary per month =6*3000€ = 18000€
 - Ec2= 2.77€/month
-- VPS (4 threads, 50 GB storage, 10GB ram) = 20€/month = 100
+- VPS (4 threads, 50 GB storage, 10GB ram, 20€/month) = 100€
 
 ## Customers Cost Estimation
 - Solar panel 6kw = 635€
