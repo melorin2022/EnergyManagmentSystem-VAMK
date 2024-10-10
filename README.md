@@ -27,12 +27,12 @@ By means of our combined efforts and individual expertise, we are sure that our 
 
 # Solution Workflow
 
-1. Get Weather Forecasts from external APIs.
-2. Predict Solar Energy Output.
-3. Predict Consumption.
-4. Calculate remaining energy.
-5. Estimate peak hours for buying and selling.
-6. Make a decision to buy sell or store.
+1. [x] Get Weather Forecasts from external APIs.
+2. [ ] Predict Solar Energy Output.
+3. [x] Predict Consumption.
+4. [ ] Calculate remaining energy.
+5. [ ] Estimate peak hours for buying and selling.
+6. [x] Make a decision to buy sell or store.
 
 ## Using AI
 
